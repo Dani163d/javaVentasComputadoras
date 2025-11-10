@@ -16,14 +16,13 @@ public class Orden {
         this.idOrden = ++contadorOrdenes;
     }
 
-    public  void agragarComputadora(Computadora computadora){
+    public  void agregarComputadora(Computadora computadora){
         computadoras.add(computadora);
     }
 
     public void mostrarOrden() {
         System.out.println("Orden #: " + idOrden);
         System.out.println("total computadoras: " + computadoras.size());
-        System.out.println();
         computadoras.forEach((System.out::println));
     }
 }
